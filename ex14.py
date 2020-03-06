@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 #-*- coding:utf-8 -*-
 a = int(input())
-q = a ** 2
-c = a ** 3
-print(q,c)
 
-
+c = (a - 32) * 5/9 
+print(int(c),"C°")
 exit(0)

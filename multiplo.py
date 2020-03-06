@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-x = int(input())
-y = int(input())
-if y % x == 0:
-	print("Sao Multiplos")
+x,y = input().split(" ")
+x=int(x)
+y=int(y)
+if x < y:
+	if y % x == 0:
+		print("Sao Multiplos")
+	else:
+		print("Nao sao Multiplos")
 else:
-	print("Nao Sao Multiplos")
+	if x % y == 0:
+		print("Sao Multiplos")
+
+	else:
+		print("Nao sao Multiplos")
+
 
 exit(0)
