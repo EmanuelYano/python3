@@ -25,9 +25,10 @@ def maior_3(x,y,z):
         if z < y:
             z,y,x = y,x,z
             #y, x, z
-    return z,y,x
+    return z,x,y
+
 
 a, b, c = int(input()), int(input()), int(input())
-mai, med, men = maior_3(a,b,c)
-print(mai, men)
+mai,men, med = maior_3(a,b,c)
+print(men, mai)
 exit(0)
